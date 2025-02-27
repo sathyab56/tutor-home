@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tutor Bay - Login</title>
+    <link rel="stylesheet" href="studentlogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="stu-container">
+        <div class="stu-left-section">
+            <h1>Start Your Journey Today - Your Future Awaits!</h1>
+            <h2>"Learning Made Simple. Just a Few Clicks to Find Your Perfect Tutor."</h2>
+            <p>Join My Tutor Bay and unlock access to expert tutors in every subject.</p>
+            <p class="stu-left-bottom">Already have an account? Welcome Back to My Tutor Bay</p>
+            <a href="start.html"><button class="stu-login-btn">Login</button></a>
+        </div>
+
+        <!-- Right Section (Login Box) -->
+        <div class="stu-right-section">
+            <form class="stu-login-form">
+                <input type="text" placeholder="Enter Name" required>
+                <input type="email" placeholder="Enter Email ID" required>
+                <div class="stu-phone-container">
+                    <select id="country-code" class="stu-phone-dropdown">
+                        <option value="+1">+1</option>
+                        <option value="+44">+44</option>
+                        <option value="+91" selected>+91</option>
+                        <option value="+61">+61</option>
+                        <option value="+81">+81 </option>
+                        <option value="+49">+49</option>
+                        <option value="+33">+33</option>
+                        <option value="+39">+39</option>
+                        <option value="+86">+86</option>
+                        <option value="+7">+7</option>
+                        <option value="+55">+55</option>
+                        <!-- Add more country codes as needed -->
+                    </select>
+                    <input type="tel" id="phone-number" class="stu-phone-input" placeholder="Enter Phone Number" required>
+                </div>
+                
+                
+                <div class="stu-password-container">
+                    <input type="password" id="password" placeholder="Enter Password" required>
+                    <i class="fa-solid fa-eye" id="togglePassword"></i>
+                </div>
+
+                <div class="stu-role">
+                    <label>Your role:</label>
+                    <div class="stu-role-options">
+                        <label>
+                            <input type="radio" name="role" value="Student" checked> Student
+                          </label>
+                          <label>
+                            <input type="radio" name="role" value="Tutor" onclick="window.location.href='tutor-register.html'"> Tutor
+                          </label>
+                    </div>
+                </div>
+                <select required>
+                    <option value="">Select Location</option>
+                    <option value="USA">USA</option>
+                    <option value="India">India</option>
+                    <option value="UK">UK</option>
+                </select>
+
+                <button type="submit">Join Now</button>
+
+                <div class="stu-line-container">
+                    <span>OR</span>
+                </div>
+                <h4 class="stu-signin">Sign in using</h4>
+                <div class="stu-social-login">
+                    <button class="google-btn"><i class="fa-brands fa-google"></i></button>
+                    <button class="facebook-btn"><i class="fa-brands fa-facebook-f"></i></button>
+                    <button class="linkedin-btn"><i class="fa-brands fa-linkedin-in"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="stu-foot">
+        <p>© 2025 My Tutor Bay. All Rights Reserved</p>
+    </div>
+
+    <script src="studentlogin.js"></script>
+</body>
+</html>

@@ -1,0 +1,505 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+        font-family: "Inter", serif;;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.header {
+    height: 450px;
+    background: url(dashboard.jpeg) no-repeat center center/cover;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 30px;
+    background: linear-gradient(to right, #d0f0ff, #7ec8e3);
+    height: 80px;
+}
+.logo img {
+    height: 60px;
+    margin-top: 15px;
+}
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-icons img {
+    height: 24px;
+    cursor: pointer;
+}
+.login-btn {
+    background: black;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.login-btn:hover {
+    background: #333;
+}
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url('dashboard.jpeg') no-repeat center center/cover;
+}
+
+.banner-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(32, 165, 211, 0.8); /* Blue overlay */
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-text h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.banner-text h1 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+/*profile card*/
+/* Profile Card */
+.profile1-section {
+    padding: 30px;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #0d8bf2;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-left: 50px;
+}
+
+.profile1-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #e6f7ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.profile1-info {
+    display: flex;
+    align-items: center;
+}
+
+.image-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin-right: 20px;
+}
+
+.profile1-details h3 {
+    margin: 0 0 5px;
+    font-size: 1.5em;
+}
+
+.profile1-details p {
+    margin: 0;
+    color: #666;
+}
+
+.profile1-actions {
+    text-align: right;
+}
+
+.profile-h2{
+    color:white;
+}
+
+.profile1-price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-top:20px;
+    margin-right: 10px;
+}
+
+.profile1-rating {
+    margin-top: -30px;
+    color: #f39c12;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.book-btn, .contact-btn {
+    padding: 15px 30px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+
+    
+}
+
+.book-btn {
+    background-color: #0d8bf2;
+    color: white;
+    
+}
+
+.contact-btn {
+    background-color: white;
+    color: #0d8bf2;
+    border: 1px solid #0d8bf2;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.book-btn:hover {
+    background-color: #0b7ad1;
+}
+
+.contact-btn:hover {
+    color: white;
+    background-color: #0d8bf2;
+}
+
+.profile1-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.profile1-links2{
+    color: #119574 !important;
+}
+.profile1-links a:hover {
+    color: #0d8bf2;
+}
+
+/* Grid Section */
+.profile1-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.profile1-box {
+    width: 30%;
+    padding: 15px;
+    background-color: #ECFDF6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+.profile1-box h4 {
+    margin-top: 0;
+    color: #0d8bf2;
+    font-size: 1.3rem;
+}
+
+.profile1-box ul {
+    padding-left: 20px;
+}
+
+.profile1-box li {
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 1.2rem;
+    margin-right: 100px;
+    
+}
+.profile-white-bg{
+
+    background-color: white;
+    width: 370px;
+    padding: 10px;
+    
+
+    border-radius: 12px;
+}
+/* part2 */
+/* Section Styles */
+.profile2-section {
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Card Styles */
+.profile2-card {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title and Text Styles */
+.profile2-title {
+    color: #00a8e8;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.profile2-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 10px;
+}
+
+/* Link Styles */
+.profile2-link {
+    color: #00a8e8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.profile2-link:hover {
+    color: #007bb5;
+}
+
+/* Tutor Section Styles */
+.profile2-tutor {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.profile2-subtitle {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.profile2-subtext {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight:none;
+    color: #666;
+}
+
+.profile2-info {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.profile2-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.profile2-btn {
+    background-color: #00a8e8;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border-radius: 28px;
+}
+
+.profile2-btn:hover {
+    background-color: #007bb5;
+}
+
+.profile2-btn-outline {
+    background-color: white;
+    border: 2px solid #00a8e8;
+    color: #00a8e8;
+    padding: 8px 18px;
+    
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    border-radius: 28px;
+}
+
+.profile2-btn-outline:hover {
+    background-color: #00a8e8;
+    color: white;
+}
+
+/* Availability Styles */
+.profile2-availability {
+    font-size: 18px;
+    color: #119574;
+}
+
+.profile2-calendar {
+    font-size: 24px;
+}
+
+
+/* Ratings & Reviews Section */
+.profile3-ratings-section {
+    padding: 40px;
+    background: linear-gradient(135deg, #0080AB, #B0E5F7);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile3-title {
+    font-size: 2rem;
+    color: #333;
+    margin-left: 0px;
+    text-align: center;
+   
+}
+
+.profile3-subtitle {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.profile3-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile3-card {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    text-align: center;
+}
+
+.profile3-placeholder-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+}
+
+.profile3-tutor-name {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.profile3-rating {
+    font-size: 1rem;
+    color: #FFB400;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.profile3-footer {
+    background-color: #008060;
+    padding: 40px 20px 20px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile3-footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile3-footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.profile3-footer-links a:hover {
+    text-decoration: underline;
+}
+
+.profile3-footer-cta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile3-footer-cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile3-footer-button-outline {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.profile3-footer-button-outline:hover {
+    background-color: white;
+    color: #008060;
+}
+
+.profile3-footer-divider {
+    height: 50px;
+    width: 1px;
+    background-color: white;
+   
+}
+
+.profile3-footer-copyright {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    
+}
+

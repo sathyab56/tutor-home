@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tutor Bay - Tutor Register</title>
+    <link rel="stylesheet" href="tutor-register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="tutor-register-container">
+        <div class="tutor-register-left-section">
+            <h1>Start Your Journey Today - Your Future Awaits!</h1>
+            <h2>"Teach What You Love, Grow Your Career with My Tutor Bay."</h2>
+            <p>Become a tutor on My Tutor Bay and connect with eager learners. Enjoy flexible hours, competitive rates, and rewarding experiences.</p>
+            <p>Already have an account? Welcome Back to My Tutor Bay</p>
+            <a href="start.html"><button class="tutor-register-login-btn">Login</button></a>
+        </div>
+
+        <div class="tutor-register-right-section">
+            <form class="tutor-register-login-form">
+                <input type="text" id="tutorName" name="name" placeholder="Enter Name" required>
+                <input type="email" placeholder="Enter Email ID" required>
+                <div class="tutor-register-phone-container">
+                    <select id="country-code" class="tutor-register-phone-dropdown">
+                        <option value="+1">+1</option>
+                        <option value="+44">+44</option>
+                        <option value="+91" selected>+91</option>
+                        <option value="+61">+61</option>
+                        <option value="+81">+81</option>
+                        <option value="+49">+49</option>
+                        <option value="+33">+33</option>
+                        <option value="+39">+39</option>
+                        <option value="+86">+86</option>
+                        <option value="+7">+7</option>
+                        <option value="+55">+55</option>
+                    </select>
+                    <input type="tel" id="phone-number" class="tutor-register-phone-input" placeholder="Enter Phone Number" required>
+                </div>
+
+                <div class="tutor-register-password-container">
+                    <input type="password" id="password" placeholder="Enter Password" required>
+                    <i class="fa-solid fa-eye" id="togglePassword"></i>
+                </div>
+
+                <div class="tutor-register-role">
+                    <label>Your role:</label>
+                    <div class="tutor-register-role-options">
+                        <label>
+                            <input type="radio" name="role" value="Student" onclick="window.location.href='studentlogin.html'"> Student
+                          </label>
+                          <label>
+                            <input type="radio" name="role" value="Tutor"  checked> Tutor
+                          </label>
+                          
+                    </div>
+                </div>
+
+                <select id="location" required>
+                    <option value="">Select Location</option>
+                    
+                    <option value="USA">USA</option>
+                    <option value="India">India</option>
+                    <option value="UK">UK</option>
+                </select>
+
+                <a href="tutorlist.html"><button type="submit" onclick="addTutor()">Start Teaching Today</button>
+                </a>
+
+                <div class="tutor-register-line-container">
+                    <span>OR</span>
+                </div>
+                <h4 class="tutor-register-signin">Sign in using</h4>
+                <div class="tutor-register-social-login">
+                    <button class="google-btn"><i class="fa-brands fa-google"></i></button>
+                    <button class="facebook-btn"><i class="fa-brands fa-facebook-f"></i></button>
+                    <button class="linkedin-btn"><i class="fa-brands fa-linkedin-in"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="tutorlist.js"></script>
+    <div class="tutor-register-foot">
+        <p>© 2025 My Tutor Bay. All Rights Reserved</p>
+    </div>
+
+    <script src="tutor-register.js"></script>
+</body>
+</html>

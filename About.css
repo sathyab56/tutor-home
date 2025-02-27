@@ -1,0 +1,262 @@
+/* aboutUs.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.footer-left ul li:hover{
+    text-decoration: underline;
+}
+/* Header */
+.about-us-header {
+    position: relative;
+    color: white;
+    background: url('background image.jpeg') no-repeat center center/cover;
+    overflow: hidden;
+}
+
+.about-us-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity to make it darker */
+    z-index: 1;
+}
+
+.about-us-header * {
+    position: relative;
+    z-index: 2;
+}
+
+.about-us-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 30px;
+    background: rgba(248, 245, 245, 0.603) ;
+    height: 80px;
+}
+.about-us-logo img {
+    height: 60px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.about-us-nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.about-us-nav-icons i {
+    height: 24px;
+    cursor: pointer;
+    color: black;
+}
+.about-us-nav-icons i:hover {
+    color: #757e89;
+}
+.about-us-login-btn {
+    background: black;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.about-us-login-btn:hover {
+    background: #757e89;
+}
+.about-us-mission {
+    padding: 108px 20px;
+    text-align: center;
+
+}
+
+.about-us-mission h2 {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.about-us-mission h1 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.about-us-mission p {
+    margin: 10px 40px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+/* Story and Vision Section */
+.about-us-story-vision {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.about-us-story {
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, rgba(253, 236, 206, 0.685) 0%, #FDECCE 76.19%, rgba(253, 236, 206, 80%) 100%), url(vision.jpeg);
+    object-fit: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.about-us-vision {
+    padding: 28px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(250deg, rgba(253, 236, 206, 0.658) 0%, #FDECCE 76.19%, rgba(253, 236, 206, 0.712) 100%), url(vision.jpeg);
+    object-fit: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: left;
+}
+
+/* Footer */
+.about-us-footer {
+    background: linear-gradient(90deg, #008000, #00c853);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-us-links a {
+    color: white;
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.about-us-actions button {
+    border: none;
+    background: white;
+    color: green;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about-us-actions button:hover {
+    background: #f0f0f0;
+}
+
+
+
+
+.footer {
+    background: linear-gradient(to right, #12734f, #157a5c); /* Green gradient */
+    padding: 30px 60px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-left ul li {
+    margin-bottom: 10px;
+}
+
+.footer-left ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-auth {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.auth-box p {
+    margin: 9px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.outline-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.outline-btn:hover {
+    background: white;
+    color: #12734f;
+}
+
+.divider {
+    width: 1px;
+    height: 40px;
+    background: white;
+    opacity: 0.5;
+}
+
+.copyright {
+    margin-top: 40px;
+    font-size: 12px;
+    opacity: 0.7;
+    text-align: right;
+}
+

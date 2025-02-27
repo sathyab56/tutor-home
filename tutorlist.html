@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="tutorlist.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Rectangle 7.png" alt="Logo">
+            </div>
+            <div class="nav-icons">
+                <img src="i_.png" alt="Search">
+                <button class="login-btn">Login</button>
+                <img src="Vector.png" alt="Cart">
+            </div>
+        </nav>
+        
+        <div class="banner-container">
+            <div class="banner-text">
+                <h2>Find Your Perfect Tutor</h2>
+                <h1>Search, Discover, Connect:<br> Your Path to Learning Starts Here!</h1>
+    
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="What do you want to learn today?" id="searchInput">
+                    <span class="clear-btn" onclick="clearSearch()">✖</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function clearSearch() {
+            document.getElementById("searchInput").value = "";
+        }
+    </script>
+    
+    
+<div><body style="font-family: Arial, sans-serif;background-color: #f8f9fa;margin: 0;padding: 20px;">
+
+    <div class="container">
+        <h2 style="color: #007bff;text-align: center;">Find Top-Tier Tutors Who Are Ready to Help You Reach Your Goals!</h2>
+    
+        <!-- Controls -->
+        <div class="controls">
+            <div class="left-controls">
+                <button id="filterButton">Filter</button>
+                
+    
+                 <div id="filterMenu" class="filter-container" style="display: none;">
+                    <h3>Customize Your Filters</h3>
+                
+                    <div class="filterMenu"> 
+                        <h4>Location</h4>
+                        <div class="visibleCities">
+                            <label><input type="checkbox"> Mumbai</label>
+                            <label><input type="checkbox"> Delhi</label>
+                            <label><input type="checkbox"> Bangalore</label>
+                        </div>
+                        <div class="hidden allCities">
+                            <label><input type="checkbox"> Hyderabad</label>
+                            <label><input type="checkbox"> Ahmedabad</label>
+                            <label><input type="checkbox"> Chennai</label>
+                            <label><input type="checkbox"> Kolkata</label>
+                            <label><input type="checkbox"> Pune</label>
+                            <label><input type="checkbox"> Jaipur</label>
+                            <label><input type="checkbox"> Lucknow</label>
+                            <label><input type="checkbox"> Kanpur</label>
+                            <label><input type="checkbox"> Nagpur</label>
+                            <label><input type="checkbox"> Indore</label>
+                            <label><input type="checkbox"> Bhopal</label>
+                            <label><input type="checkbox"> Visakhapatnam</label>
+                            <label><input type="checkbox"> Surat</label>
+                            <label><input type="checkbox"> Patna</label>
+                            <label><input type="checkbox"> Vadodara</label>
+                            <label><input type="checkbox"> Ludhiana</label>
+                            <label><input type="checkbox"> Agra</label>
+                            <label><input type="checkbox"> Nashik</label>
+                            <label><input type="checkbox"> Meerut</label>
+                            <label><input type="checkbox"> Rajkot</label>
+                            <label><input type="checkbox"> Varanasi</label>
+                            <label><input type="checkbox"> Ranchi</label>
+                            <label><input type="checkbox"> Guwahati</label>
+                            <label><input type="checkbox"> Thiruvananthapuram</label>
+                        </div>
+                        <span class="show-more" onclick="toggleCities()">Show More +</span>
+                    </div>
+                
+                    <div class="filterMenu">
+                        <h4>Subject</h4>
+                        <div id="subjectFilters">
+                            <label><input type="checkbox" checked> Indian Courses</label><br>
+                            <label><input type="checkbox"> International Courses</label><br>
+                            <label><input type="checkbox"> Law Entrance Exam Courses</label><br>
+                            <div id="extraSubjects" style="display: none;">
+                                <label><input type="checkbox"> School Level</label><br>
+                                <label><input type="checkbox"> College Level</label><br>
+                                <label><input type="checkbox"> Government Exam</label><br>
+                                <label><input type="checkbox"> Language Training</label><br>
+                                <label><input type="checkbox"> Certification Training</label><br>
+                                <label><input type="checkbox"> Computer Training</label><br>
+                            </div>
+                        </div>
+                        <span id="showMoreSubjects" onclick="toggleSubjects()" style="color: blue; cursor: pointer;">Show More +</span>
+                    </div>
+                
+                    <div class="filterMenu">
+                        <h4>Experience Level</h4>
+                        <label><input type="checkbox" checked> 1 to 2 Years Experience</label><br>
+                        <label><input type="checkbox"> 2 to 5 Years Experience</label><br>
+                        <label><input type="checkbox"> 5+ Years Experience</label><br>
+                    </div>
+                
+                    <div class="filterMenu">
+                        <h4>Pricing</h4>
+                        <div class="price-container">
+                            <input type="number" id="minPrice" value="0" min="0" max="10000">
+                            <div class="slider-container">
+                                <input type="range" id="priceRangeMin" min="0" max="10000" value="0">
+                                <input type="range" id="priceRangeMax" min="0" max="10000" value="10000">
+                            </div>
+                            <input type="number" id="maxPrice" value="10000" min="0" max="10000">
+                        </div>
+                    </div>
+                    
+                    
+                    
+                
+                    <div class="filterMenu">
+                        <h4>Reviews</h4>
+                        <label><input type="checkbox" checked> ⭐⭐⭐⭐⭐</label><br>
+                        <label><input type="checkbox"> ⭐⭐⭐⭐</label><br>
+                        <label><input type="checkbox"> ⭐⭐⭐</label><br>
+                        <label><input type="checkbox"> ⭐⭐</label><br>
+                        <label><input type="checkbox"> ⭐</label><br>
+                    </div>
+                
+                    <div class="filterMenu">
+                        <h4>Availability</h4>
+                        <label><input type="checkbox"> Offline</label><br>
+                        <label><input type="checkbox" checked> Online</label><br>
+                    </div>
+                 </div>
+                
+                
+                <div class="toggle-buttons">
+                    <button id="listViewBtn" class="active">☰</button>
+                    <button id="gridViewBtn">⏹</button>
+                </div>
+            </div>
+            <div class="featured-container">
+                <select id="sort-select">
+                    <option value="" selected disabled hidden>Sort by: Featured</option>
+                    <option value="rating-high-low">Rating High-Low</option>
+                    <option value="rating-low-high">Rating Low-High</option>
+                    <option value="experience-high-low">Experience High-Low</option>
+                    <option value="experience-low-high">Experience Low-High</option>
+                    <option value="price-high-low">Price High-Low</option>
+                    <option value="price-low-high">Price Low-High</option>
+                </select>
+            </div>
+            
+            
+            
+        </div>
+    
+        <!-- Explore -->
+        <div class="explore-container">
+            <p class="explore-text" style="font-size:18px;">Explore handpicked, highly-rated tutors in every field.</p>
+            <a href="#" class="featured-link">See Featured Tutors</a>
+        </div>
+        <!-- <center>
+        
+        <div class="input-section">
+            <h3>Add a Tutor</h3>
+            <input type="text" id="tutorName" placeholder="Enter Tutor Name" required>
+            <input type="text" id="tutorCourse" placeholder="Enter Course Title" required>
+            <input type="text" id="tutorDescription" placeholder="Enter Course Description" required>
+            
+            <label for="tutorImage" class="file-label">Add Image</label>
+            <input type="file" id="tutorImage" accept="image/*" class="hidden-input">
+            
+            <button onclick="addTutor()">Add Tutor</button>
+        </div>
+        </center>
+     -->
+        <!-- Tutor List -->
+        <div class="tutor-container" id="tutorContainer"></div>
+    </div>
+    <script src="tutorlist.js"></script>
+</body></div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Blog & Resources</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <div class="footer-auth">
+                <div class="auth-box">
+                    <p>Let's pick up where you left off!</p>
+                    <button class="outline-btn">Login</button>
+                </div>
+                <div class="divider"></div>
+                <div class="auth-box">
+                    <p>Start your journey with us!</p>
+                    <button class="outline-btn">Signup</button>
+                </div>
+            </div>
+            <p class="copyright">© 2025 My Tutor Bay. All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>

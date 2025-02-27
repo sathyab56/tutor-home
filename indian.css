@@ -1,0 +1,913 @@
+/* Global Styles */
+*{
+    box-sizing: border-box;
+}
+
+.indian-container {
+    width: 100%;
+    margin:auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+/* Header Styling */
+.indian-container h1 {
+    color: #0089B6;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.indian-subheading {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Parent Container for Alignment */
+.indian-course-category {
+    padding-left: 70px; /* Ensures uniform left padding */
+    margin-bottom: 15px;
+}
+
+/* Course Titles */
+.indian-container h2 {
+    color:#0089B6;
+    font-size: 22px;
+    padding-left: 74px; /* Same left padding */
+    margin-bottom: 10px;
+}
+
+h3 {
+    color:#00ABE4;
+    
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+}
+
+/* Grid Layout */
+.indian-grid {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+ 
+
+     
+}
+
+/* Course Cards */
+.indian-card {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    background: url('img/indian.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 55px;
+}
+
+/* Blurring Only the Background */
+.indian-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(3px); /* Slight blur for background */
+    border-radius: 8px;
+}
+
+/* Keeping Text Sharp */
+.indian-card span {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white !important; /* Force white text */
+    z-index: 1;
+    padding: 25px;
+    
+}
+
+
+ body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        
+       
+        .footer {
+            margin-top: auto; /* Pushes the footer to the bottom */
+        }
+        
+        .header {
+            height: 450px;
+            background: url(img/dashboard.jpeg) no-repeat center center/cover;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1px 30px;
+            background: linear-gradient(to right, #d0f0ff, #7ec8e3);
+            height: 80px;
+        }
+        .logo img {
+            height: 60px;
+            margin-top: 15px;
+        }
+        .nav-icons  {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .nav-icons i {
+            height: 24px;
+            cursor: pointer;
+            color: #000;
+        }
+        .nav-icons i:hover {
+            color: #757e89;
+        }
+        .login-btn {
+            background: black;
+            color: white;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-btn:hover {
+            background: #757e89;
+        }
+        .banner-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background: url('img/dashboard.jpeg') no-repeat center center/cover;
+        }
+        
+        .banner-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(32, 165, 211, 0.8); /* Blue overlay */
+        }
+        
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            width: 100%;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .banner-text h2 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        .banner-text h1 {
+            font-family: Inter;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 56px;
+            letter-spacing: 0%;
+            text-align: center;
+        }    
+        
+
+
+
+
+        .footer {
+            background: linear-gradient(to right, #12734f, #157a5c); /* Green gradient */
+            padding: 30px 60px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .footer-left ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-left ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-left ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .footer-right {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .footer-auth {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .auth-box p {
+            margin: 9px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .outline-btn {
+            background: transparent;
+            color: white;
+            border: 1px solid white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .outline-btn:hover {
+            background: white;
+            color: #12734f;
+        }
+        
+        .divider {
+            width: 1px;
+            height: 40px;
+            background: white;
+            opacity: 0.5;
+        }
+        
+        .copyright {
+            margin-top: 40px;
+            font-size: 12px;
+            opacity: 0.7;
+            text-align: right;
+        }
+
+
+
+        .international-container {
+            width: 100%;
+            margin:auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+           
+            
+        }
+        
+        
+        
+        /* Parent Container for Alignment */
+        .international-course-category {
+            padding-left: 70px;
+            margin-bottom: 15px;
+        }
+        
+        /* Course Titles */
+        .international-container h2 {
+            color:#0089B6;
+            font-size: 22px;
+            padding-left: 74px;
+            margin-bottom: 10px;
+        }
+        
+        h3 {
+            color:#00ABE4;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        /* Grid Layout */
+        .international-grid {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+           
+        
+        }
+        
+        /* Course Cards */
+        .international-card {
+            position: relative;
+            width: 380px;
+            height: 380px;
+            background: url('img/international.png') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            padding: 55px;
+        }
+        
+        /* Blurring Only the Background */
+        .international-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            filter: blur(3px);
+            border-radius: 8px;
+        }
+        
+        /* Keeping Text Sharp */
+        .international-card span {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 40px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: white !important;
+            z-index: 1;
+            padding: 25px;
+        }
+
+
+        .language-container {
+            width: 100%;
+            margin:auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+          
+        }
+        
+        /* Parent Container for Alignment */
+        .language-course-category {
+            padding-left: 70px;
+            margin-bottom: 15px;
+        }
+        
+        /* Course Titles */
+        .language-container h2 {
+            color: #0089B6;
+            font-size: 22px;
+            padding-left: 74px;
+            margin-bottom: 10px;
+        }
+        
+        /* Grid Layout */
+        .language-grid {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+            width: calc(100% - 40px);
+           
+        }
+        
+        /* Course Cards */
+        .language-card {
+            position: relative;
+            width: 380px;
+            height: 380px;
+            background: url('img/language.png') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            padding: 55px;
+        }
+        
+        /* Blurring Only the Background */
+        .language-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            filter: blur(3px);
+            border-radius: 8px;
+        }
+        
+        /* Keeping Text Sharp */
+        .language-card span {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+            color: white !important;
+            z-index: 1;
+            padding: 25px;
+        }
+
+
+
+
+
+        .law-container {
+            width: 100%;
+            margin:auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+        }
+        
+        /* Parent Container for Alignment */
+        .law-course-category {
+            padding-left: 70px;
+            margin-bottom: 15px;
+        }
+        
+        /* Course Titles */
+        .law-container h2 {
+            color: #0089B6;
+            font-size: 22px;
+            padding-left: 74px;
+            margin-bottom: 10px;
+        }
+        
+        /* Grid Layout */
+        .law-grid {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+            width: calc(100% - 40px);
+        
+        }
+        
+        /* Course Cards */
+        .law-card {
+            position: relative;
+            width: 380px;
+            height: 380px;
+            background: url('img/law.png') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            padding: 55px;
+        }
+        
+        /* Blurring Only the Background */
+        .law-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            filter: blur(3px);
+            border-radius: 8px;
+        }
+        
+        /* Keeping Text Sharp */
+        .law-card span {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 40px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: white !important;
+            z-index: 1;
+            padding: 25px;
+        }
+
+
+
+        .school-container {
+            width: 100%;
+            margin:auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+        
+        }
+        
+        /* Parent Container for Alignment */
+        .school-course-category {
+            padding-left: 70px;
+            margin-bottom: 15px;
+        }
+        
+        /* Course Titles */
+        
+        .school-container h2 {
+            color: #0089B6;
+            font-size: 22px;
+            padding-left: 74px;
+            margin-bottom: 10px;
+        }
+        
+        /* Grid Layout */
+        .school-grid {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+            width: calc(100% - 40px);
+            
+        }
+        
+        /* Course Cards */
+        .school-card {
+            position: relative;
+            width: 380px;
+            height: 380px;
+            background: url('img/school.png') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            padding: 55px;
+        }
+        
+        /* Blurring Only the Background */
+        .school-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            filter: blur(3px);
+            border-radius: 8px;
+        }
+        
+        /* Keeping Text Sharp */
+        .school-card span {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 40px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: white !important;
+            z-index: 1;
+            padding: 25px;
+        }
+
+        
+        
+    
+        .government-container {
+            width: 100%;
+            margin:auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+          
+        }
+        
+        /* Parent Container for Alignment */
+        .government-course-category {
+            padding-left: 70px;
+            margin-bottom: 15px;
+        }
+        
+        /* Course Titles */
+        .government-container h2 {
+            color: #0089B6;
+            font-size: 22px;
+            padding-left: 74px;
+            margin-bottom: 10px;
+        }
+        
+        /* Grid Layout */
+        .government-grid {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+            width: calc(100% - 40px);
+         
+        }
+        
+        /* Course Cards */
+        .government-card {
+            position: relative;
+            width: 380px;
+            height: 380px;
+            background: url('img/government.png') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            padding: 55px;
+        }
+        
+        /* Blurring Only the Background */
+        .government-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            filter: blur(3px);
+            border-radius: 8px;
+        }
+        
+        /* Keeping Text Sharp */
+        .government-card span {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 40px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: white !important;
+            z-index: 1;
+            padding: 25px;
+        }
+
+
+
+        
+.computer-container {
+    width: 100%;
+    margin:auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+  
+}
+
+/* Parent Container for Alignment */
+.computer-course-category {
+    padding-left: 70px;
+    margin-bottom: 15px;
+}
+
+/* Course Titles */
+.computer-container  h2 {
+    color: #0089B6;
+    font-size: 22px;
+    padding-left: 74px;
+    margin-bottom: 10px;
+}
+
+/* Grid Layout */
+.computer-grid {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: calc(100% - 40px);
+
+}
+
+/* Course Cards */
+.computer-card {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    background: url('img/computer.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 55px;
+}
+
+/* Blurring Only the Background */
+.computer-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(3px);
+    border-radius: 8px;
+}
+
+/* Keeping Text Sharp */
+.computer-card span {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: white !important;
+    z-index: 1;
+    padding: 25px;
+}
+
+
+.college-container {
+    width: 100%;
+    margin:auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+  
+}
+
+/* Parent Container for Alignment */
+.college-course-category {
+    padding-left: 70px;
+    margin-bottom: 15px;
+}
+
+/* Course Titles */
+.college-container h2 {
+    color: #0089B6;
+    font-size: 22px;
+    padding-left: 74px;
+    margin-bottom: 10px;
+}
+
+/* Grid Layout */
+.college-grid {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: calc(100% - 40px);
+  
+}
+
+/* Course Cards */
+.college-card {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    background: url('img/college.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 55px;
+}
+
+/* Blurring Only the Background */
+.college-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(3px);
+    border-radius: 8px;
+}
+
+/* Keeping Text Sharp */
+.college-card span {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white !important;
+    z-index: 1;
+    padding: 25px;
+}
+
+
+
+.certification-container {
+    width: 100%;
+    margin:auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+  
+}
+
+/* Parent Container for Alignment */
+.certification-course-category {
+    padding-left: 70px;
+    margin-bottom: 15px;
+}
+
+/* Course Titles */
+
+.certification-container h2 {
+    color: #0089B6;
+    font-size: 22px;
+    padding-left: 74px;
+    margin-bottom: 10px;
+}
+
+/* Grid Layout */
+.certification-grid {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+  
+ 
+}
+
+/* Course Cards */
+.certification-card {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    background: url('img/certification.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 55px;
+}
+
+/* Blurring Only the Background */
+.certification-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(3px);
+    border-radius: 8px;
+}
+
+/* Keeping Text Sharp */
+.certification-card span {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: white !important;
+    z-index: 1;
+    padding: 25px;
+}

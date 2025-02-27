@@ -231,6 +231,10 @@ h3 {
             text-decoration: none;
             font-weight: bold;
         }
+
+        .footer-left ul li:hover{
+            text-decoration: underline;
+        }
         
         .footer-right {
             display: flex;

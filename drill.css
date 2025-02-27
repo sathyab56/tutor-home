@@ -7,10 +7,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-.header {
-    height: 450px;
-    background: url(dashboard.jpeg) no-repeat center center/cover;
-}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -31,6 +28,8 @@ body {
 .nav-icons img {
     height: 24px;
     cursor: pointer;
+    margin-left: 400%;
+
 }
 .login-btn {
     background: black;
@@ -40,6 +39,7 @@ body {
     border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
+    margin-left: 90%;
 }
 .login-btn:hover {
     background: #333;
